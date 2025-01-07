@@ -1,0 +1,12 @@
+int ldrPin = A0; // Pin connected to the LDR
+int ldrValue;
+
+void setup() {
+  Serial.begin(9600);
+}
+
+void loop() {
+  ldrValue = analogRead(ldrPin); // Read the value from LDR
+  Serial.println(ldrValue); // Print the value
+  delay(1000); // Delay for one second
+}
